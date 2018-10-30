@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: ./rails-server
+    working_dir: /usr/src/rails-server
+    volumes:
+      - ./rails-server:/usr/src/rails-server
+    ports:
+      - 3000:3000
